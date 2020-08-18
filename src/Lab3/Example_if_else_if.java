@@ -44,7 +44,6 @@ public class Example_if_else_if {
         System.out.println("Please,enter score bewtween 0-100. Thany you ");
 
 
--
 
 
     }//main
