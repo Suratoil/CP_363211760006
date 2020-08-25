@@ -13,6 +13,5 @@ public class Example_Do_while {
         }while (num != 0);
         System.out.println("End, Good Bye. ");
 
-
     }
 }
