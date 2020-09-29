@@ -10,8 +10,53 @@ public class BasicArray2D {
         number = inputData (number);
         //display data to  array 2 D
         displayArray(number);
+        //find total value in array
+        findTotalvalue(number);
+        //find max value
+        findmaxvalue(number);
+        //find min value
+        findminvalue(number);
+
+    }
+
+    private static void findminvalue(int[][] number) {
+            int min = number[0][0];
+            for (int i = 0; i < number.length; i++) { //row
+                for (int j = 0; j < number[i].length; j++) { //column
+                    //condition
+                    if (min >= number [i][j]){
+                        min = number [i][j];
+                    }
+                }
+                System.out.println("The minmum value : "+min);
+            }
+
+    }
 
 
+    private static void findmaxvalue(int[][] number) {
+        int max = number [0][0];
+        for (int i = 0; i < number.length; i++) { //row
+            for (int j = 0; j < number[i].length; j++) { //column
+                //condition
+                if (max <=number [i][j]){
+                    max = number [i][j];
+                }
+
+            }
+            System.out.println("The maximum value: "+max);
+        }
+    }
+
+    private static void findTotalvalue(int[][] number) {
+    int t = 0;
+        for (int i = 0; i < number.length; i++) { //row
+            for (int j = 0; j < number[i].length; j++) { //column
+              t = t+number[i][j]; // t = t+number[i][j]
+
+            }
+        }
+        System.out.println("Total value in array " + t);
     }
 
     private static void displayArray(int[][] number) {
