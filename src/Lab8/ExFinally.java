@@ -21,6 +21,10 @@ public class ExFinally {
         } catch (IOException e) {
             System.out.println("Can not read text from file.");
             e.printStackTrace();
+        }finally {
+            //connect DB
+            //close connection
+            System.out.println("Test Finally.");
         }
 
 
