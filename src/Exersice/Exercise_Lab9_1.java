@@ -64,6 +64,11 @@ public class Exercise_Lab9_1 {
                 writer.close();
             } catch (IOException e) {
                 e.printStackTrace();
+
+
+
+
+
             }
 
         }
